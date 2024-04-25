@@ -1,0 +1,29 @@
+# i.c.u on payday!!
+
+# definitions ;3
+
+#wmxdir="$HOME/.wmx"
+
+# export
+
+export XDG_CURRENT_DESKTOP='wmx'
+
+# sxhkd boot
+
+sxhkd -c $HOME/.wmx/sxhkd/sxhkdrc &
+
+# wallpaper
+
+feh --bg-fill $HOME/.wmx/art/1701643229923706.jpeg &
+
+# load wmx-specific xresources
+xrdb -merge $HOME/.wmx/Xresources &
+
+# launch dunst
+$HOME/.wmx/scripts/dunstwmx &
+
+# launch a clock because why not lol
+wmclock -24 -led "#F7F7F7" &
+
+# start wmx
+/usr/local/bin/wmx

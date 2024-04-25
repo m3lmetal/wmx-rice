@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=wmx
+Comment=windowmakerx
+Exec=$HOME/.wmx/scripts/run-wmx
+Terminal=False
+DesktopNames=wmx
+
+[Window Manager]
+SessionManaged=true

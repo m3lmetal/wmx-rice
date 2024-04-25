@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+# dir
+wmxdir="$HOME/.wmx"
+
+# make sure no other dunsts are running, if they are kill them
+
+if [[ `pidof dunst` ]]; then
+	pkill dunst
+fi
+
+dunst -config $wmxdir/dunst/dunstrc &

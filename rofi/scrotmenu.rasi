@@ -1,0 +1,97 @@
+configuration {
+    modi: "drun";
+}
+
+@theme "theme"
+
+* {
+	font: "Cozette 11";
+	separatorcolor: transparent;
+}
+
+/*
+USE_ICON=NO
+*/ 
+
+window {
+	width: 320px;
+  height: 300px;
+	border-radius: 0;
+	border: 2;
+	padding: 0;
+	border-color: @border;
+	background-color: @background;
+}
+
+mainbox {
+	background-color: @background;
+	children: [inputbar,listview];
+	padding: 10;
+}
+
+inputbar {
+	children: [prompt, entry];
+	background-color: @background;
+	border-radius: 0;
+	padding: 0 0 6 0;
+}
+
+prompt {
+	background-color: @background-alt;
+	text-color: @accent;
+	enabled: true;
+	border-radius: 0;
+	padding: 2 14 4 14;
+}
+
+entry {
+	background-color: @background;
+	text-color: @foreground;
+	placeholder-color: @foreground;
+	border-radius: 0;
+	placeholder: "select";
+	blink: false;
+	margin: 8 0 0 14;
+}
+
+listview {
+	scrollbar: false;
+	padding: 0;
+	background-color: @background;
+	columns: 1;
+	lines: 3;
+	margin: 0;
+	spacing: 10;
+	dynamic: true;
+	scrollbar: false;
+	layout: vertical;
+	fixed-height: true;
+	fixed-columns: true;
+}
+
+element {
+	padding: 12;
+}
+
+element-text {
+	background-color: inherit;
+	text-color: inherit;
+	expand: true;
+	horizontal-align: 0;
+	vertical-align: 0.5;
+}
+
+element.selected.normal {
+	background-color: @accent;
+	text-color: @background;
+}
+
+element.alternate.normal {
+	background-color: @background-alt;
+	text-color: @foreground;
+}
+
+element.normal.normal {
+	background-color: @background-alt;
+	text-color: @foreground;
+}

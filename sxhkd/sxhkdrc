@@ -1,0 +1,14 @@
+# Melmetal config
+# General hotkeys
+
+# terminal emulator
+Scroll_Lock
+      st
+
+# rofi launcher
+Menu
+      rofi -config ~/.wmx/rofi/config.rasi -show drun
+
+# screenshot Menu
+KP_Multiply
+      bash ~/.wmx/scripts/rofi_screenshot
