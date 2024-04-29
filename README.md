@@ -89,7 +89,7 @@ At this point you should probably login, play around a bit, read the README in t
 
 ## Screenshots
 
-![desktop](https://cdn.discordapp.com/attachments/1039735868564439083/1230083214354288701/xRTQkjF.png?ex=662a1e44&is=6628ccc4&hm=1ff0fb67438a62f4bf6887b263934e934fb67e20756c9fb54dc8b2018d3a285a&)
+![desktop](https://cdn.discordapp.com/attachments/822517913914834984/1234605773330583716/xXzt7fd.png?ex=663157ba&is=6630063a&hm=8a9e6ebdd7617dcd83eff1321cb4bfa6eec486c2c1c6e100d2436fce583a3956&)
 
 
 
